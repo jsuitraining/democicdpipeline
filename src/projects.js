@@ -47,7 +47,7 @@ const handleSelectedRegion= (regionselected)=> {
        (result && userSelectedRegion== null) && result.map((country)=> {
         return <div>
           <h3>{country.name.common}</h3>
-          <img src={country.flags.png}/>
+          <img src={country.flags.png} alt="flagtext"/>
         </div>
        })
       }
@@ -55,7 +55,7 @@ const handleSelectedRegion= (regionselected)=> {
        result ? result.map((country)=> {
         return userSelectedRegion == country.region && <div>
           <h3>{country.name.common}</h3>
-          <img src={country.flags.png}/>
+          <img src={country.flags.png} alt="flagtext"/>
         </div>
        }):"no data available"
       }

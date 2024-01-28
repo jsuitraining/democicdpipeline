@@ -9,7 +9,7 @@ import ReactHookFormDemo from './reacthookform';
 
 export default function MainComponent() {
 
-  const [count,setCount] = useState(10);
+
 
   
   return (
