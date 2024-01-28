@@ -44,7 +44,7 @@ const handleSelectedRegion= (regionselected)=> {
 
     <div className='dashboard'>
       {
-       (result && userSelectedRegion== null) && result.map((country)=> {
+       (result && userSelectedRegion=== null) && result.map((country)=> {
         return <div>
           <h3>{country.name.common}</h3>
           <img src={country.flags.png} alt="flagtext"/>
@@ -53,7 +53,7 @@ const handleSelectedRegion= (regionselected)=> {
       }
  {
        result ? result.map((country)=> {
-        return userSelectedRegion == country.region && <div>
+        return userSelectedRegion === country.region && <div>
           <h3>{country.name.common}</h3>
           <img src={country.flags.png} alt="flagtext"/>
         </div>
